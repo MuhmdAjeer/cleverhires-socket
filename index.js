@@ -1,7 +1,7 @@
 const dotenv = require('dotenv').config()
 const io = require('socket.io')(8800,{
     cors : {
-        origin : process.env.CLIENT_URL
+        origin : 'https://cleverhires.vercel.app'
     }
 })
 
