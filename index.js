@@ -1,8 +1,6 @@
 const dotenv = require('dotenv').config()
 const io = require('socket.io')(8800,{
-    cors : {
-        origin : 'https://cleverhires.vercel.app'
-    }
+    cors : true
 })
 
 let activeUsers = [];
